@@ -293,6 +293,13 @@
         </div>
       </div>
 
+      <div id="husky" class="content -success">
+        <h3>husky</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
@@ -396,8 +403,8 @@ const targetDeps = [
   "eslint",
   "lint-staged",
   "prettier",
-
   "husky",
+
   "openapi-typescript",
   "postcss",
   "sass",
