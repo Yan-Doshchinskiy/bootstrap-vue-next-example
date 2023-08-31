@@ -154,6 +154,7 @@
         </div>
       </div>
 
+
       <div id="portal-vue" class="content -success">
         <h3>portal-vue</h3>
         <div class="components">
@@ -171,6 +172,18 @@
 
         </div>
       </div>
+
+      <div id="primeicons" class="content -success">
+        <h3>primeicons</h3>
+        <div class="components">
+          Работает.
+          <i class="pi pi-check"></i>
+          <i class="pi pi-times"></i>
+          <span class="pi pi-search"></span>
+          <span class="pi pi-user"></span>
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
