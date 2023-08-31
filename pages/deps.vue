@@ -263,6 +263,15 @@
         </div>
       </div>
 
+      <div id="connect" class="content -success">
+        <h3>connect</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+          <br/>
+          К тому же мы использовали из неё только 1 тип.
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
@@ -362,15 +371,9 @@ const targetDeps = [
   "jest",
   "babel-core",
   "babel-jest",
-
   "connect",
-  "dotenv",
+
   "eslint",
-  "eslint-config-airbnb-base",
-  "eslint-config-prettier",
-  "eslint-import-resolver-nuxt",
-  "eslint-plugin-nuxt",
-  "eslint-plugin-vue",
   "husky",
   "lint-staged",
   "openapi-typescript",
