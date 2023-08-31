@@ -22,6 +22,7 @@
     "apexcharts": "^3.42.0",
     "core-js": "^3.32.1",
     "dayjs": "^1.11.9",
+    "express": "^4.18.2",
     "sass": "^1.66.1",
     "vue3-apexcharts": "^1.4.4"
   }
