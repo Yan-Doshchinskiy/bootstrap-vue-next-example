@@ -60,15 +60,40 @@
           Дефолтный пакет для Nuxt 3
         </div>
       </div>
+
+      <div id="@rkaliev/nuxtjs-yandex-metrika" class="content -research">
+        <h3>@rkaliev/nuxtjs-yandex-metrika</h3>
+        <div class="components">
+          Нужно найти замену
+        </div>
+      </div>
+
+      <div id="@sentry/integrations" class="content -research">
+        <h3>@sentry/integrations</h3>
+        <div class="components">
+          Должно работать. Это просто JS пакет, не привязанный к версии nuxt
+        </div>
+      </div>
+
+      <div id="@vueuse/core" class="content -success">
+        <h3>@vueuse/core</h3>
+        <div class="components">
+          Работает.
+          <br />
+          [useLocalStorage] Страница загружена {{renderCount.count}} раз.
+        </div>
+      </div>
     </div>
   </DefaultLayout>
 </template>
 
 <script setup lang="ts">
 import DefaultLayout from "~/layouts/default.vue";
+import {useLocalStorage} from "@vueuse/core";
 import {
   BLink,
 } from "bootstrap-vue-next";
+import {onMounted} from "@vue/runtime-core";
 
 interface ExamplePost {
   id: number,
@@ -78,6 +103,9 @@ interface ExamplePost {
 }
 
 const examplePost = ref<null | ExamplePost>(null)
+const renderCount = ref<{count: number}>({
+  count: 0
+})
 
 async function fetchExamplePost() {
   try {
@@ -88,6 +116,20 @@ async function fetchExamplePost() {
   }
 }
 
+function initLocalStoreValue() {
+   const store = useLocalStorage(
+      'my-storage',
+      {
+        count: 0,
+      },
+  )
+  renderCount.value = store.value
+  renderCount.value.count += 1
+}
+
+onMounted(() => {
+  initLocalStoreValue()
+})
 
 const targetDeps = [
   "@nuxt/http",
