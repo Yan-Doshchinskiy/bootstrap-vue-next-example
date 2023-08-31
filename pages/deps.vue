@@ -240,6 +240,15 @@
         </div>
       </div>
 
+      <div id="jest" class="content -success">
+        <h3>jest</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+          <br />
+          Можно еще посмотреть в сторону vitest
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
@@ -336,8 +345,8 @@ const targetDeps = [
   "stylelint",
   "@nuxtjs/stylelint-module",
   "@vue/test-utils",
+  "jest",
 
-  "@vue/vue2-jest",
   "babel-core",
   "babel-jest",
   "connect",
@@ -349,10 +358,6 @@ const targetDeps = [
   "eslint-plugin-nuxt",
   "eslint-plugin-vue",
   "husky",
-  "jest",
-  "jest-environment-jsdom",
-  "jest-junit",
-  "jest-transform-stub",
   "lint-staged",
   "openapi-typescript",
   "postcss",
