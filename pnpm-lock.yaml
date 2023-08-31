@@ -29,6 +29,9 @@ dependencies:
   mixpanel-browser:
     specifier: ^2.47.0
     version: 2.47.0
+  portal-vue:
+    specifier: ^3.0.0
+    version: 3.0.0(vue@3.3.4)
   sass:
     specifier: ^1.66.1
     version: 1.66.1
@@ -5171,6 +5174,18 @@ packages:
       jsonc-parser: 3.2.0
       mlly: 1.4.0
       pathe: 1.1.1
+
+  /portal-vue@3.0.0(vue@3.3.4):
+    resolution: {integrity: sha512-9eprMxNURLx6ijbcgkWjYNcTWJYu/H8QF8nyAeBzOmk9lKCea01BW1hYBeLkgz+AestmPOvznAEOFmNuO4Adjw==}
+    engines: {node: '>=14.19'}
+    peerDependencies:
+      vue: ^3.0.4
+    peerDependenciesMeta:
+      vue:
+        optional: true
+    dependencies:
+      vue: 3.3.4
+    dev: false
 
   /postcss-calc@9.0.1(postcss@8.4.28):
     resolution: {integrity: sha512-TipgjGyzP5QzEhsOZUaIkeO5mKeMFpebWzRogWG/ysonUlnHcq5aJe0jOjpfzUU8PeSaBQnrE8ehR0QA5vs8PQ==}

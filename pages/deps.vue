@@ -146,10 +146,29 @@
           <input v-maska data-maska="#-#-#-#-#" value="12">
         </div>
       </div>
+
       <div id="mixpanel-browser" class="content -success">
         <h3>mixpanel-browser</h3>
         <div class="components">
           Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
+      <div id="portal-vue" class="content -success">
+        <h3>portal-vue</h3>
+        <div class="components">
+          Работает.
+          <div style="background-color: yellow">
+            Телепортируем из этого контейнера.
+            <portal to="destination">
+              <p style="background-color: #c789ff">Телепортируемый текст</p>
+            </portal>
+          </div>
+          <div style="background-color: greenyellow">
+            Телепортируем в этот контейнер.
+            <portal-target name="destination"/>
+          </div>
+
         </div>
       </div>
     </div>
@@ -234,9 +253,6 @@ const targetDeps = [
   "express",
   "maska",
   "mixpanel-browser",
-  "nuxt",
-  "pinia",
-  "pinia-plugin-persistedstate",
   "portal-vue",
   "primeicons",
   "primevue",
