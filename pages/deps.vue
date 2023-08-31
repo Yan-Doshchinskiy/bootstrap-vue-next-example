@@ -49,8 +49,11 @@
         <div class="components">
           Возможная замена:
           <br/>
-          <p>Пакет с достаточно большим количеством звезд: <a href="https://github.com/kevinmarrec/nuxt-pwa-module" target="_blank">https://github.com/kevinmarrec/nuxt-pwa-module</a></p>
-          <p>Разработчик - член команды Nuxt: <a href="https://github.com/vite-pwa/nuxt" target="_blank">https://github.com/vite-pwa/nuxt</a></p>
+          <p>Пакет с достаточно большим количеством звезд: <a href="https://github.com/kevinmarrec/nuxt-pwa-module"
+                                                              target="_blank">https://github.com/kevinmarrec/nuxt-pwa-module</a>
+          </p>
+          <p>Разработчик - член команды Nuxt: <a href="https://github.com/vite-pwa/nuxt" target="_blank">https://github.com/vite-pwa/nuxt</a>
+          </p>
         </div>
       </div>
 
@@ -79,8 +82,30 @@
         <h3>@vueuse/core</h3>
         <div class="components">
           Работает.
-          <br />
-          [useLocalStorage] Страница загружена {{renderCount.count}} раз.
+          <br/>
+          [useLocalStorage] Страница загружена {{ renderCount.count }} раз.
+        </div>
+      </div>
+
+      <div id="@vueuse/nuxt" class="content -success">
+        <h3>@vueuse/nuxt</h3>
+        <div class="components">
+          Работает.
+        </div>
+      </div>
+
+      <div id="vue-apexcharts" class="content -success">
+        <h3>vue-apexcharts</h3>
+        <div class="components">
+          Пакет можно заменить на vue3-apexcharts.
+          <ClientOnly>
+            <apexchart
+                height="400"
+                width="100%"
+                :options="apexChartConfig.options"
+                :series="apexChartConfig.series"
+            ></apexchart>
+          </ClientOnly>
         </div>
       </div>
     </div>
@@ -103,9 +128,24 @@ interface ExamplePost {
 }
 
 const examplePost = ref<null | ExamplePost>(null)
-const renderCount = ref<{count: number}>({
+const renderCount = ref<{ count: number }>({
   count: 0
 })
+
+const apexChartConfig = {
+  options: {
+    chart: {
+      id: 'vuechart-example'
+    },
+    xaxis: {
+      categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+    }
+  },
+  series: [{
+    name: 'series-1',
+    data: [30, 40, 45, 50, 49, 60, 70, 91]
+  }]
+}
 
 async function fetchExamplePost() {
   try {
@@ -117,7 +157,7 @@ async function fetchExamplePost() {
 }
 
 function initLocalStoreValue() {
-   const store = useLocalStorage(
+  const store = useLocalStorage(
       'my-storage',
       {
         count: 0,
@@ -141,7 +181,7 @@ const targetDeps = [
   "@sentry/integrations",
   "@vueuse/core",
   "@vueuse/nuxt",
-  "apexcharts",
+  "vue-apexcharts",
   "body-parser",
   "bootstrap",
   "bootstrap-vue",
@@ -157,7 +197,6 @@ const targetDeps = [
   "primeicons",
   "primevue",
   "vue",
-  "vue-apexcharts",
   "vue-feather-icons",
   "vue-meta",
   "vue-router",
