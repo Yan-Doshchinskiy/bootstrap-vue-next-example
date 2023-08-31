@@ -12,6 +12,35 @@
         </ul>
       </div>
 
+      <div id="@nuxtjs/google-analytics" class="content -research">
+        <h3>@nuxtjs/google-analytics</h3>
+        <div class="components">
+          Такого пакета нет. Нужно разобраться можно ли его заменить пакетом @nuxtjs/gtm
+        </div>
+      </div>
+
+      <div id="@rkaliev/nuxtjs-yandex-metrika" class="content -research">
+        <h3>@rkaliev/nuxtjs-yandex-metrika</h3>
+        <div class="components">
+          Нужно найти замену
+        </div>
+      </div>
+
+      <div id="@sentry/integrations" class="content -research">
+        <h3>@sentry/integrations</h3>
+        <div class="components">
+          Должно работать. Это просто JS пакет, не привязанный к версии nuxt
+        </div>
+      </div>
+
+      <div id="@nuxtjs/sentry" class="content -research">
+        <h3>@nuxtjs/sentry</h3>
+        <div class="components">
+          Не работает. Нужно исследовать
+        </div>
+      </div>
+
+
       <div id="@nuxt/http" class="content -partial">
         <h3>@nuxt/http</h3>
         <div class="components">
@@ -30,19 +59,6 @@
         </div>
       </div>
 
-      <div id="@nuxtjs/composition-api" class="content -success">
-        <h3>@nuxtjs/composition-api</h3>
-        <div class="components">
-          Composition api уже входит в Vue 3 и Nuxt 3
-        </div>
-      </div>
-
-      <div id="@nuxtjs/google-analytics" class="content -research">
-        <h3>@nuxtjs/google-analytics</h3>
-        <div class="components">
-          Такого пакета нет. Нужно разобраться можно ли его заменить пакетом @nuxtjs/gtm
-        </div>
-      </div>
 
       <div id="@nuxtjs/pwa" class="content -partial">
         <h3>@nuxtjs/pwa</h3>
@@ -57,24 +73,38 @@
         </div>
       </div>
 
+      <div id="bootstrap-vue" class="content -partial">
+        <h3>bootstrap-vue</h3>
+        <div class="components">
+          Можно заменить на нестабильную версию.
+          <br/>
+          Более подробно на странице:
+          <nuxt-link to="/">Bootstrap Vue Next</nuxt-link>
+        </div>
+      </div>
+
+      <div id="vue-feather-icons" class="content -partial">
+        <h3>vue-feather-icons</h3>
+        <div class="components">
+          Можно заменить на vue-feather. Иконки теже, другой синтаксис.
+          <vue-feather type="external-link"></vue-feather>
+          <vue-feather type="phone-call"></vue-feather>
+        </div>
+      </div>
+
+
+
+      <div id="@nuxtjs/composition-api" class="content -success">
+        <h3>@nuxtjs/composition-api</h3>
+        <div class="components">
+          Composition api уже входит в Vue 3 и Nuxt 3
+        </div>
+      </div>
+
       <div id="@pinia/nuxt" class="content -success">
         <h3>@pinia/nuxt</h3>
         <div class="components">
           Дефолтный пакет для Nuxt 3
-        </div>
-      </div>
-
-      <div id="@rkaliev/nuxtjs-yandex-metrika" class="content -research">
-        <h3>@rkaliev/nuxtjs-yandex-metrika</h3>
-        <div class="components">
-          Нужно найти замену
-        </div>
-      </div>
-
-      <div id="@sentry/integrations" class="content -research">
-        <h3>@sentry/integrations</h3>
-        <div class="components">
-          Должно работать. Это просто JS пакет, не привязанный к версии nuxt
         </div>
       </div>
 
@@ -109,15 +139,6 @@
         </div>
       </div>
 
-      <div id="bootstrap-vue" class="content -partial">
-        <h3>bootstrap-vue</h3>
-        <div class="components">
-          Можно заменить на нестабильную версию.
-          <br/>
-          Более подробно на странице:
-          <nuxt-link to="/">Bootstrap Vue Next</nuxt-link>
-        </div>
-      </div>
 
       <div id="core-js" class="content -success">
         <h3>core-js</h3>
@@ -192,30 +213,15 @@
         </div>
       </div>
 
-      <div id="vue-feather-icons" class="content -partial">
-        <h3>vue-feather-icons</h3>
-        <div class="components">
-          Можно заменить на vue-feather. Иконки теже, другой синтаксис.
-          <vue-feather type="external-link"></vue-feather>
-          <vue-feather type="phone-call"></vue-feather>
-        </div>
-      </div>
 
       <div id="@faker-js/faker" class="content -success">
         <h3>@faker-js/faker</h3>
         <div class="components">
           Работает. JS библиотека не зависит от версии nuxt.
-          <br />
-          Boolean: {{faker.datatype.boolean()}}
-          <br />
-          Noun: {{faker.word.noun()}}
-        </div>
-      </div>
-
-      <div id="@nuxtjs/sentry" class="content -research">
-        <h3>@nuxtjs/sentry</h3>
-        <div class="components">
-          Не работает. Нужно исследовать
+          <br/>
+          Boolean: {{ faker.datatype.boolean() }}
+          <br/>
+          Noun: {{ faker.word.noun() }}
         </div>
       </div>
 
@@ -244,7 +250,7 @@
         <h3>jest</h3>
         <div class="components">
           Работает. JS библиотека не зависит от версии nuxt.
-          <br />
+          <br/>
           Можно еще посмотреть в сторону vitest
         </div>
       </div>
@@ -390,17 +396,19 @@ onMounted(() => {
 })
 
 const targetDeps = [
-  "@nuxt/http",
-  "@nuxtjs/composition-api",
   "@nuxtjs/google-analytics",
-  "@nuxtjs/pwa",
-  "@pinia/nuxt",
   "@rkaliev/nuxtjs-yandex-metrika",
   "@sentry/integrations",
+  "@nuxtjs/sentry",
+  "@nuxt/http",
+  "@nuxtjs/pwa",
+  "bootstrap-vue",
+  "vue-feather-icons",
+  "@nuxtjs/composition-api",
+  "@pinia/nuxt",
   "@vueuse/core",
   "@vueuse/nuxt",
   "vue-apexcharts",
-  "bootstrap-vue",
   "core-js",
   "dayjs",
   "express",
@@ -410,10 +418,8 @@ const targetDeps = [
   "primeicons",
   "primevue",
   "vue",
-  "vue-feather-icons",
   "vue-meta",
   "@faker-js/faker",
-  "@nuxtjs/sentry",
   "stylelint",
   "@nuxtjs/stylelint-module",
   "@vue/test-utils",
