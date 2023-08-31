@@ -286,6 +286,13 @@
         </div>
       </div>
 
+      <div id="prettier" class="content -success">
+        <h3>prettier</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
@@ -388,15 +395,12 @@ const targetDeps = [
   "connect",
   "eslint",
   "lint-staged",
+  "prettier",
 
   "husky",
   "openapi-typescript",
   "postcss",
-  "postcss-html",
-  "prettier",
   "sass",
-  "sass-loader",
-  "ts-jest",
 ]
 
 
