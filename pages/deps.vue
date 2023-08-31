@@ -201,11 +201,44 @@
         </div>
       </div>
 
+      <div id="@faker-js/faker" class="content -success">
+        <h3>@faker-js/faker</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+          <br />
+          Boolean: {{faker.datatype.boolean()}}
+          <br />
+          Noun: {{faker.word.noun()}}
+        </div>
+      </div>
+
+      <div id="@nuxtjs/sentry" class="content -research">
+        <h3>@nuxtjs/sentry</h3>
+        <div class="components">
+          Не работает. Нужно исследовать
+        </div>
+      </div>
+
+      <div id="stylelint" class="content -success">
+        <h3>stylelint</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
+      <div id="@nuxtjs/stylelint-module" class="content -success">
+        <h3>@nuxtjs/stylelint-module</h3>
+        <div class="components">
+          Работает.
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
 
 <script setup lang="ts">
+import {faker} from '@faker-js/faker'
 import {onMounted} from "@vue/runtime-core";
 import VueFeather from 'vue-feather';
 import PrimeButton from "primevue/button";
@@ -291,6 +324,39 @@ const targetDeps = [
   "vue",
   "vue-feather-icons",
   "vue-meta",
+  "@faker-js/faker",
+  "@nuxtjs/sentry",
+  "stylelint",
+  "@nuxtjs/stylelint-module",
+
+  "@sentry/webpack-plugin",
+  "@types/jest",
+  "@types/vue-feather-icons",
+  "@vue/test-utils",
+  "@vue/vue2-jest",
+  "babel-core",
+  "babel-jest",
+  "connect",
+  "dotenv",
+  "eslint",
+  "eslint-config-airbnb-base",
+  "eslint-config-prettier",
+  "eslint-import-resolver-nuxt",
+  "eslint-plugin-nuxt",
+  "eslint-plugin-vue",
+  "husky",
+  "jest",
+  "jest-environment-jsdom",
+  "jest-junit",
+  "jest-transform-stub",
+  "lint-staged",
+  "openapi-typescript",
+  "postcss",
+  "postcss-html",
+  "prettier",
+  "sass",
+  "sass-loader",
+  "ts-jest",
 ]
 
 
