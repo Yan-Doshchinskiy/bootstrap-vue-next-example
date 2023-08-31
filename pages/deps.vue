@@ -192,12 +192,22 @@
         </div>
       </div>
 
+      <div id="vue-feather-icons" class="content -partial">
+        <h3>vue-feather-icons</h3>
+        <div class="components">
+          Можно заменить на vue-feather. Иконки теже, другой синтаксис.
+          <vue-feather type="external-link"></vue-feather>
+          <vue-feather type="phone-call"></vue-feather>
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
 
 <script setup lang="ts">
 import {onMounted} from "@vue/runtime-core";
+import VueFeather from 'vue-feather';
 import PrimeButton from "primevue/button";
 import {
   BLink,
