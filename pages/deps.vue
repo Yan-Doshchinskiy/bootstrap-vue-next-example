@@ -12,17 +12,26 @@
         </ul>
       </div>
 
-      <div id="@nuxtjs/google-analytics" class="content -research">
+      <div id="@nuxtjs/google-analytics" class="content -partial">
         <h3>@nuxtjs/google-analytics</h3>
         <div class="components">
-          Такого пакета нет. Нужно разобраться можно ли его заменить пакетом @nuxtjs/gtm
+          Пакет не работает.
+          Можно заменить решением без установки пакета:
+          <a href="https://medium.com/@yashashr/add-google-analytics-to-your-nuxt-3-app-in-under-a-minute-67ce727e9e2a" target="_blank">
+            https://medium.com/@yashashr/add-google-analytics-to-your-nuxt-3-app-in-under-a-minute-67ce727e9e2a
+          </a>
         </div>
       </div>
 
-      <div id="@rkaliev/nuxtjs-yandex-metrika" class="content -research">
+      <div id="@rkaliev/nuxtjs-yandex-metrika" class="content -partial">
         <h3>@rkaliev/nuxtjs-yandex-metrika</h3>
         <div class="components">
-          Нужно найти замену
+          Пакет не работает. Есть несколько специальных пакетов для Nuxt 3.
+          <br />
+          Например:
+          <a href="https://snyk.io/advisor/npm-package/yandex-metrika-module-nuxt3" target="_blank">
+            yandex-metrika-module-nuxt3
+          </a>
         </div>
       </div>
 
