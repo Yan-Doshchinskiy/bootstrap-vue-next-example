@@ -35,6 +35,9 @@ dependencies:
   primeicons:
     specifier: ^6.0.1
     version: 6.0.1
+  primevue:
+    specifier: ^3.22.4
+    version: 3.22.4(primeicons@6.0.1)(vue@3.3.4)
   sass:
     specifier: ^1.66.1
     version: 1.66.1
@@ -5497,6 +5500,16 @@ packages:
 
   /primeicons@6.0.1:
     resolution: {integrity: sha512-KDeO94CbWI4pKsPnYpA1FPjo79EsY9I+M8ywoPBSf9XMXoe/0crjbUK7jcQEDHuc0ZMRIZsxH3TYLv4TUtHmAA==}
+    dev: false
+
+  /primevue@3.22.4(primeicons@6.0.1)(vue@3.3.4):
+    resolution: {integrity: sha512-4FHiLhtPOMBgvUXpiiuRb0mCRihiI83dhHoQEx3wOumz/fHCWtZ5D+A+VZPGcVTCrQvFpVfOpHBklpYdw1yJ2g==}
+    peerDependencies:
+      primeicons: ^5.0.0 || ^6.0.0
+      vue: ^3.0.0
+    dependencies:
+      primeicons: 6.0.1
+      vue: 3.3.4
     dev: false
 
   /proc-log@3.0.0:

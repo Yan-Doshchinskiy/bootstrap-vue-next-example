@@ -184,18 +184,27 @@
         </div>
       </div>
 
+      <div id="primevue" class="content -success">
+        <h3>primevue</h3>
+        <div class="components">
+          Работает.
+          <PrimeButton>PrimeButton</PrimeButton>
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
 
 <script setup lang="ts">
-import {vMaska} from 'maska'
-import DefaultLayout from "~/layouts/default.vue";
-import {useLocalStorage} from "@vueuse/core";
+import {onMounted} from "@vue/runtime-core";
+import PrimeButton from "primevue/button";
 import {
   BLink,
 } from "bootstrap-vue-next";
-import {onMounted} from "@vue/runtime-core";
+import DefaultLayout from "~/layouts/default.vue";
+import {vMaska} from 'maska'
+import {useLocalStorage} from "@vueuse/core";
 
 interface ExamplePost {
   id: number,
