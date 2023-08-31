@@ -300,6 +300,13 @@
         </div>
       </div>
 
+      <div id="openapi-typescript" class="content -success">
+        <h3>openapi-typescript</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
