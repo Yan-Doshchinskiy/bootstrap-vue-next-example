@@ -26,17 +26,19 @@
         </div>
       </div>
 
-      <div id="@sentry/integrations" class="content -research">
+      <div id="@sentry/integrations" class="content -partial">
         <h3>@sentry/integrations</h3>
         <div class="components">
-          Должно работать. Это просто JS пакет, не привязанный к версии nuxt
+          Не работает в том виде, в котором сделано в Nuxt 2.
+          Можно использовать для замены @sentry/vite-plugin и @sentry/browser
         </div>
       </div>
 
-      <div id="@nuxtjs/sentry" class="content -research">
+      <div id="@nuxtjs/sentry" class="content -partial">
         <h3>@nuxtjs/sentry</h3>
         <div class="components">
-          Не работает. Нужно исследовать
+          Не работает в том виде, в котором сделано в Nuxt 2.
+          Можно использовать для замены @sentry/vite-plugin и @sentry/browser
         </div>
       </div>
 
