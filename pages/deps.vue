@@ -146,6 +146,12 @@
           <input v-maska data-maska="#-#-#-#-#" value="12">
         </div>
       </div>
+      <div id="mixpanel-browser" class="content -success">
+        <h3>mixpanel-browser</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
     </div>
   </DefaultLayout>
 </template>

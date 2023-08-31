@@ -26,6 +26,9 @@ dependencies:
   maska:
     specifier: ^2.1.10
     version: 2.1.10
+  mixpanel-browser:
+    specifier: ^2.47.0
+    version: 2.47.0
   sass:
     specifier: ^1.66.1
     version: 1.66.1
@@ -4507,6 +4510,10 @@ packages:
     dependencies:
       minipass: 3.3.6
       yallist: 4.0.0
+
+  /mixpanel-browser@2.47.0:
+    resolution: {integrity: sha512-Ldrva0fRBEIFWmEibBQO1PulfpJVF3pf28Guk09lDirDaSQqqU/xs9zQLwN2rL5VwVtsP1aD3JaCgaa98EjojQ==}
+    dev: false
 
   /mkdirp@1.0.4:
     resolution: {integrity: sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==}
