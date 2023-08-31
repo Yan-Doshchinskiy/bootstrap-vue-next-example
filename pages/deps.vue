@@ -118,6 +118,20 @@
           <nuxt-link to="/">Bootstrap Vue Next</nuxt-link>
         </div>
       </div>
+
+      <div id="core-js" class="content -success">
+        <h3>core-js</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
+      <div id="dayjs" class="content -success">
+        <h3>dayjs</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
     </div>
   </DefaultLayout>
 </template>
