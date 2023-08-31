@@ -233,6 +233,13 @@
         </div>
       </div>
 
+      <div id="@vue/test-utils" class="content -success">
+        <h3>@vue/test-utils</h3>
+        <div class="components">
+          Можно использовать @nuxtjs/stylelint-module.
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
@@ -328,11 +335,8 @@ const targetDeps = [
   "@nuxtjs/sentry",
   "stylelint",
   "@nuxtjs/stylelint-module",
-
-  "@sentry/webpack-plugin",
-  "@types/jest",
-  "@types/vue-feather-icons",
   "@vue/test-utils",
+
   "@vue/vue2-jest",
   "babel-core",
   "babel-jest",
