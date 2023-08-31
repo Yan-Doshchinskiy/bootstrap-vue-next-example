@@ -249,6 +249,20 @@
         </div>
       </div>
 
+      <div id="babel-core" class="content -success">
+        <h3>babel-core</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
+      <div id="babel-jest" class="content -success">
+        <h3>babel-jest</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
@@ -346,9 +360,9 @@ const targetDeps = [
   "@nuxtjs/stylelint-module",
   "@vue/test-utils",
   "jest",
-
   "babel-core",
   "babel-jest",
+
   "connect",
   "dotenv",
   "eslint",
