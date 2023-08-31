@@ -132,10 +132,18 @@
           Работает. JS библиотека не зависит от версии nuxt.
         </div>
       </div>
+
       <div id="express" class="content -success">
         <h3>express</h3>
         <div class="components">
           Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+      <div id="maska" class="content -success">
+        <h3>maska</h3>
+        <div class="components">
+          Работает.
+          <input v-maska data-maska="#-#-#-#-#" value="12">
         </div>
       </div>
     </div>
@@ -143,6 +151,7 @@
 </template>
 
 <script setup lang="ts">
+import {vMaska} from 'maska'
 import DefaultLayout from "~/layouts/default.vue";
 import {useLocalStorage} from "@vueuse/core";
 import {
@@ -161,6 +170,7 @@ const examplePost = ref<null | ExamplePost>(null)
 const renderCount = ref<{ count: number }>({
   count: 0
 })
+
 
 const apexChartConfig = {
   options: {
