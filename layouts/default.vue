@@ -28,7 +28,7 @@ const links = [
 .default-layout {
   display: flex;
   flex-direction: column;
-  padding: 30px 50px;
+  padding: 60px 50px 30px 50px;
 
   > .header {
     display: flex;
