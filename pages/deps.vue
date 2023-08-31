@@ -291,10 +291,6 @@ const targetDeps = [
   "vue",
   "vue-feather-icons",
   "vue-meta",
-  "vue-router",
-  "vue-server-renderer",
-  "vue-template-compiler",
-  "webpack",
 ]
 
 
