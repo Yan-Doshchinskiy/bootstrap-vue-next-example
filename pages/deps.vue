@@ -307,6 +307,20 @@
         </div>
       </div>
 
+      <div id="sass" class="content -success">
+        <h3>sass</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
+      <div id="postcss" class="content -success">
+        <h3>postcss</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
@@ -411,10 +425,9 @@ const targetDeps = [
   "lint-staged",
   "prettier",
   "husky",
-
   "openapi-typescript",
-  "postcss",
   "sass",
+  "postcss",
 ]
 
 
