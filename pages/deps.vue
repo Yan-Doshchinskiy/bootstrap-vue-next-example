@@ -272,6 +272,20 @@
         </div>
       </div>
 
+      <div id="eslint" class="content -success">
+        <h3>eslint</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
+      <div id="lint-staged" class="content -success">
+        <h3>lint-staged</h3>
+        <div class="components">
+          Работает. JS библиотека не зависит от версии nuxt.
+        </div>
+      </div>
+
     </div>
   </DefaultLayout>
 </template>
@@ -372,10 +386,10 @@ const targetDeps = [
   "babel-core",
   "babel-jest",
   "connect",
-
   "eslint",
-  "husky",
   "lint-staged",
+
+  "husky",
   "openapi-typescript",
   "postcss",
   "postcss-html",
