@@ -108,6 +108,16 @@
           </ClientOnly>
         </div>
       </div>
+
+      <div id="bootstrap-vue" class="content -partial">
+        <h3>bootstrap-vue</h3>
+        <div class="components">
+          Можно заменить на нестабильную версию.
+          <br/>
+          Более подробно на странице:
+          <nuxt-link to="/">Bootstrap Vue Next</nuxt-link>
+        </div>
+      </div>
     </div>
   </DefaultLayout>
 </template>
@@ -182,8 +192,6 @@ const targetDeps = [
   "@vueuse/core",
   "@vueuse/nuxt",
   "vue-apexcharts",
-  "body-parser",
-  "bootstrap",
   "bootstrap-vue",
   "core-js",
   "dayjs",
