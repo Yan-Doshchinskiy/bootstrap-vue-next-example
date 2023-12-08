@@ -15,15 +15,6 @@ export default defineNuxtConfig({
     ],
     build: {
         transpile: ['primevue']
-    },
-    security: {
-        headers: {
-            ...(isProduction ? {
-                contentSecurityPolicy: {
-                    'frame-src':  '*.wildberries.ru/*'
-                }
-            } : {})
-        },
-    },
+    }
 })
 
