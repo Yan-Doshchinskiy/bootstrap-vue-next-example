@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const isProduction = process.env.NODE_ENV === 'production'
 export default defineNuxtConfig({
     devtools: {enabled: true},
     modules: [
@@ -17,9 +18,11 @@ export default defineNuxtConfig({
     },
     security: {
         headers: {
-            contentSecurityPolicy: {
-                'frame-src': process.env.NODE_ENV === 'production' ? '*.wildberries.ru/*' : '*'
-            }
+            ...(isProduction ? {
+                contentSecurityPolicy: {
+                    'frame-src':  '*.wildberries.ru/*'
+                }
+            } : {})
         },
     },
 })
