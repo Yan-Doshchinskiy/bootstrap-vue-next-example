@@ -19,11 +19,11 @@ export default defineNuxtConfig({
         transpile: ['primevue']
     },
     security: {
-        headers: {
-            contentSecurityPolicy: {
-                'frame-src': '*.wildberries.ru/*'
-            },
-        },
+        // headers: {
+        //     contentSecurityPolicy: {
+        //         'frame-src': '*.wildberries.ru/*'
+        //     },
+        // },
         enabled: isCSPEnabled
     }
 })
