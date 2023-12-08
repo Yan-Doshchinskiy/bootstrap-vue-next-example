@@ -15,6 +15,9 @@ export default defineNuxtConfig({
     ],
     build: {
         transpile: ['primevue']
+    },
+    security: {
+        enabled: false
     }
 })
 
