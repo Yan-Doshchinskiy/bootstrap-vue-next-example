@@ -18,7 +18,7 @@ export default defineNuxtConfig({
     security: {
         headers: {
             contentSecurityPolicy: {
-                'frame-src': '*.wildberries.ru/*'
+                'frame-src': process.env.NODE_ENV === 'production' ? '*.wildberries.ru/*' : '*'
             }
         },
     },
