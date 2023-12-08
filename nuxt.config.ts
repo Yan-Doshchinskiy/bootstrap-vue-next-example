@@ -24,7 +24,7 @@ export default defineNuxtConfig({
         enabled: isCSPEnabled,
         headers: {
             contentSecurityPolicy: {
-                'frame-src': '*weather-panel.vercel.app/*',
+                'frame-src': ["'self'", 'weather-panel.vercel.app'],
                 'frame-ancestors': 'frame',
             },
             crossOriginEmbedderPolicy: false,
