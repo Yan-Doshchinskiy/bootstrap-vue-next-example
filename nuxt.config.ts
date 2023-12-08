@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     modules: [
         '@bootstrap-vue-next/nuxt',
         '@vueuse/nuxt',
+        'nuxt-security'
     ],
     css: [
         'bootstrap/dist/css/bootstrap.min.css',
@@ -14,4 +15,12 @@ export default defineNuxtConfig({
     build: {
         transpile: ['primevue']
     },
+    security: {
+        headers: {
+            contentSecurityPolicy: {
+                'frame-src': '*.wildberries.ru/*'
+            }
+        },
+    },
 })
+
