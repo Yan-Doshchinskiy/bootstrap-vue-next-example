@@ -1,7 +1,5 @@
 <template>
   <div class="default-layout">
-    {{nodeEnv}}
-    {{nuxtNodeEnv}}
     <header class="header">
       <nav class="links">
         <nuxt-link class="link" v-for="link in links" :to="link.to">
@@ -24,8 +22,6 @@ const links = [
   },
 ]
 
-const nodeEnv = process.env.NODE_ENV
-const nuxtNodeEnv = process.env.NUXT_NODE_ENV
 
 </script>
 
