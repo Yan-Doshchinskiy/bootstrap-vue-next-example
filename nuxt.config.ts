@@ -26,7 +26,7 @@ export default defineNuxtConfig({
             contentSecurityPolicy: {
                 'frame-src': '*weather-panel.vercel.app/*',
             },
-            // crossOriginEmbedderPolicy: false
+            crossOriginEmbedderPolicy: false
         },
     }
 })
