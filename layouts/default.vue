@@ -26,7 +26,6 @@ const links = [
 
 const nodeEnv = process.env.NODE_ENV
 
-
 const nuxtNodeEnv = process.env.NUXT_NODE_ENV
 
 </script>
