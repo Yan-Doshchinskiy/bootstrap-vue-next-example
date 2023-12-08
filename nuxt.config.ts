@@ -1,5 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 const isProduction = process.env.NODE_ENV === 'production'
+
+const isCSPEnabled = isProduction
 export default defineNuxtConfig({
     devtools: {enabled: true},
     modules: [
@@ -17,7 +19,11 @@ export default defineNuxtConfig({
         transpile: ['primevue']
     },
     security: {
-        enabled: false
-    }
-})
+        headers: {
+            contentSecurityPolicy: {
+                'frame-src': '*.wildberries.ru/*'
+            },
+        },
+        enabled: isCSPEnabled
+    })
 
