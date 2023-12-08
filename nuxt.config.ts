@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const isProduction = process.env.NODE_ENV === 'production'
+const isProduction = process.env.NUXT_NODE_ENV === 'production'
+
 
 const isCSPEnabled = isProduction
 export default defineNuxtConfig({
