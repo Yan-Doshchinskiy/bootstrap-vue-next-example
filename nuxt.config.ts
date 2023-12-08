@@ -3,6 +3,7 @@ const isProduction = process.env.NUXT_NODE_ENV === 'production'
 
 
 const isCSPEnabled = isProduction
+console.log('isCSPEnabled',isCSPEnabled)
 export default defineNuxtConfig({
     devtools: {enabled: true},
     modules: [
